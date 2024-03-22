@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Document Object Model</title>
+    <style>
+      body {
+        background: dodgerblue;
+        color: white;
+        font: normal 10pt arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estudos sobre DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Aqui</div>
+    <div name="exemplo">Exemplo</div>
+    <div class="classe">Classe</div>
+    <br />
+    <script>
+      window.document.write(window.document.characterSet + "<br>");
+      window.document.write(window.navigator.appName + "<br>");
+      window.document.write(window.document.URL + "<br><br>");
+
+      /* Árvore DOM 
+        window -> document -> html -> (html,body) -> tags
+        tudo isso é chamado de elemento*/
+
+      /* Seleção
+        Marca, ID, Nome, classe, Seletor */
+
+      //por Marca getElementsByTagName()
+      var p1 = window.document.getElementsByTagName("p")[0]; //0 é o primeiro 'p' parágrafo que aparecer
+      window.document.write(p1.innerText + "<br>"); //innerText é o texto que está dentro do parágrafo
+      window.document.write(p1.innerHTML + "<br><br>"); // HTML vem com todas as tags como strong, mas no alert ele mostra a tag
+      p1.style.color = "blue";
+
+      //por ID getElementById
+      var d = window.document.getElementById("msg");
+      window.document.write(d.innerHTML + "<br>");
+      d.style.background = "lightgreen";
+      d.innerText = "aguradando...";
+
+      //por Nome getElementsByName
+      var ex = document.getElementsByName("exemplo")[0];
+      document.write(ex.innerHTML + "<br>");
+      ex.style.border = "1px solid crimson";
+
+      //por classe getElementsByClassName
+      var cla = document.getElementsByClassName("classe")[0];
+      document.write(cla.innerHTML + "<br><br>");
+      cla.style.color = "black";
+
+      //por Seletor querySelector() querySelectorAll()
+      var A = document.querySelector("div#msg");
+      var B = document.querySelector("div.classe");
+      document.write(A.innerText + "<br>" + B.innerHTML);
+    </script>
+  </body>
+</html>

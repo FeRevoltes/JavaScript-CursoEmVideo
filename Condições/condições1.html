@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Condições</title>
+    <style>
+      body {
+        font-family: Roboto, Arial, sans-serif;
+      }
+      #res, #mensagem{
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sistema de velocidade</h1>
+    <p>Limite de velocidade = 60km/h</p>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" /> Km/h
+    <input type="button" value="verificar" onclick="calcular()" />
+    <div id="res"></div>
+
+    <h1>Sistema de nacionalidade</h1>
+    <p>Qual país você nasceu?</p>
+    <select name="pais" id="pais" onchange="selecionouPais()">
+      <option value="bra">Brasil</option>
+      <option value="fra">França</option>
+      <option value="ita">Itália</option>
+      <option value="can">Canadá</option>
+    </select>
+    <div id="mensagem"></div>
+
+    <script>
+      function calcular() {
+        var velocidade = document.getElementById("txtvel").value;
+        velocidade = Number(velocidade);
+        var res = document.getElementById("res");
+        if (velocidade > 60) {
+          res.innerHTML = `Atenção, Velocidade acima do limite! Velocidade atual: ${velocidade}km/h.`;
+        } else {
+          res.innerHTML = `Velocidade abaixo do limite. Velocidade atual: ${velocidade}km/h.`;
+        }
+      }
+
+      function selecionouPais() {
+        var nacionalidade = document.getElementById("pais");
+        var op = nacionalidade.options[nacionalidade.selectedIndex].value;
+
+        var mensagem = document.getElementById("mensagem");
+        if (op === "bra"){
+          mensagem.textContent = `Então você é Brasileiro!`;
+        } else if (op === "fra"){
+          mensagem.textContent = `Então você é Francês!`;
+        } else if (op === "ita"){
+          mensagem.textContent = `Então você é Italiano!`;
+        } else if (op === "can") {
+          mensagem.textContent = `Então você é Canadense!`;
+        } else {
+          mensagem.textContent = `Então você é de outro país!`;
+        }
+      }
+
+      /* console.log("Texto da opção selecionada:", op.text); // Mostra o texto da opção selecionada
+      console.log("Valor da opção selecionada:", op.value); // Mostra o valor associado à opção selecionada
+      console.log("Índice da opção selecionada:", nacionalidade.selectedIndex); // Mostra o índice da opção selecionada */
+    </script>
+  </body>
+</html>

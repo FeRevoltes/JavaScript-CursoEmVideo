@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript - Tratamento de dados</title>
+  </head>
+  <body>
+    <script>
+      var nome = window.prompt("Seu nome:");
+      window.alert("É um grande prazer de conhecer " + nome + "!"); //Concatenação
+      // parseFloat or parseInt
+      var n1 = parseFloat(window.prompt("Digite n1:"));
+      var n2 = parseFloat(window.prompt("Digite n2:"));
+      var s = n1 + n2;
+      document.write("soma de n1 + n2 = " + s);
+
+      //number indentifica se é Float ou Int
+      var n3 = Number(window.prompt('Digite um número: '))
+      var n4 = Number(window.prompt('Digite um número: '))
+      console.log(n3 + n3)
+
+      //converter Number para string usando String(var) or var.toString()
+      var x = 3
+      var y = 4
+      var z = y + x
+      document.write('x + y = ' + String(z))
+
+      //templet string: preicsa usar crase `texto ${var}`
+      var name = 'Fernando'
+      var idade = 20
+      document.write(`O ${name} tem ${idade} anos`)
+
+      /* formatar string
+      var.lenght = quantos caracteres a string tem
+      var.toUpperCase() = toda a string em maiúsculo
+      var.toLowerCase() = toda a string em minúsculo*/
+
+      var nome2 = window.prompt('Diga o seu nome: ')
+      console.log(`seu nome tem ${nome2.length} letras`)
+
+      //formatar número
+      var n5 = 1525.90
+      console.log(n5.toFixed(4)) //casas decimais após a vírgula
+      console.log(n5.toFixed(1).replace('.',','))//trocar uma coisa por outra
+      console.log(n5.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})) //localizar dinheiro: BRl, USD, EUR etc.
+    </script>
+  </body>
+</html>

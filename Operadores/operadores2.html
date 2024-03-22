@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript - Operadores</title>
+  </head>
+  <body>
+    <script>
+      //operadores: aritméticos, atribuição, relacionais, lógicos, ternário
+      //nessa aula: relacionais, lógicos e ternário
+
+      /* Relacionais
+        > maior
+        < menor
+        >= maior ou igual
+        <= menor ou igual
+        == igualdade solta
+        === igualdade restrita
+        != diferente */
+
+      var a = 5;
+      var b = 10;
+      var c = "10";
+
+      console.log(a > b);
+      console.log(a < b);
+      console.log(a >= a);
+      console.log(b <= a);
+      console.log(b == c); // Sinal de igualde não testa o tipo, 5 == '5' é true
+      console.log(b === c); // Igualdade estrita
+      console.log(a != b);
+      console.log(b !== c); // Não idêntico, eles tem o mesmo valor mas são tipos diferentes
+
+      /* Lógicos
+        ! negação (not)
+        && conjução (and)
+        || disjunção (or) */
+
+      console.log(!true);
+      console.log(true && true);
+      console.log(true || false);
+      console.log(a > b && b % a == 0);
+      console.log(a >= b || b / 2 == 5);
+
+      /* ordem de precedência:
+        ()
+        **
+        ** / %
+        + -
+        > < >= <= == !=
+        !
+        &&
+        ||*/
+
+      /* Ternário
+      teste ? true : false
+         */
+
+      var media = 8
+      media > 7 ? 'aprovado' : 'reprovado'
+      console.log(media > 7 ? 'aprovado' : 'reprovado')
+
+      var x = 4
+      var res = x % 2 == 0 ? 5: 9
+      console.log(res)
+
+      var idade = 20
+      var r= idade >= 18 ? 'maior' : 'menor'
+      console.log(r)
+    </script>
+  </body>
+</html>

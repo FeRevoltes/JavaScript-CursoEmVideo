@@ -1,0 +1,40 @@
+body {
+  background: deepskyblue;
+  font: normal 12pt arial;
+}
+header {
+  color: white;
+  text-align: center;
+}
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+#msgHora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+#imgHora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+#imgHora img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+}

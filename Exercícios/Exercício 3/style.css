@@ -1,0 +1,47 @@
+body {
+  background: lightblue;
+  font: normal 12pt arial;
+}
+header {
+  color: white;
+  text-align: center;
+}
+article {
+  background: white;
+  margin: auto;
+  width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+}
+section {
+  margin: 10px;
+}
+footer {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.botao {
+  margin: 10px;
+}
+.botao input[type="button"] {
+    background: lightblue;
+    border: solid 1px black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#res{
+    margin: 10px;
+    position: relative;
+}
+#res img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}

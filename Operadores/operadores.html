@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Operadores</title>
+</head>
+<body>
+    <script>
+        //operadores: aritméticos, atribuição, relacionais, lógicos, ternário
+        //nessa aula: aritméticos e atribuições
+
+        /* Aritméticos
+        + Soma
+        - Subtração
+        * Multiplicação
+        / Divisão
+        % Resto da divisão inteira
+        ** Potência */
+
+
+        console.log((10 + 4)/2) //uso de parenteses para mudar a ordem da conta isso é chamado dde precedência
+
+        /* ordem de precedência:
+        ()
+        ** 
+        ** / %
+        + -
+        */
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 -a/2
+        var e = 6 * 2/d
+        var f = b % e + 4 / e
+
+        console.log(a, b, c, d, e, f)
+
+        // auto-atribuições
+        var n = 3
+        console.log(n)
+        n = 3 + 4
+        console.log(n)
+        n = n - 5
+        console.log(n)
+        n = n * 4
+        console.log(n)
+        n = n / 2
+        console.log(n)
+        n = n ** 2
+        console.log(n)
+        n = n % 5
+        console.log(n)
+
+        // simplificação
+        n = 3
+        console.log(n)
+        n += 4
+        console.log(n)
+        n -= 5
+        console.log(n)
+        n *= 4
+        console.log(n)
+        n /=2
+        console.log(n)
+        n **=2
+        console.log(n)
+        n %= 5
+        console.log(n)
+
+        // Incremento
+        var x = 5
+        console.log(x)
+        x ++ 
+        console.log(x)
+        x --
+        console.log(x)
+        x++ // pós incremento
+        ++x // pre incremento
+        
+    </script>
+</body>
+</html>
