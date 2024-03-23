@@ -1,0 +1,36 @@
+body {
+  background: lightskyblue;
+  font: normal 12pt arial;
+}
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: white;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+footer {
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+
+#botao {
+  background: #ddd;
+  border: solid 1px black;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#result {
+  margin: 10px 0;
+}
+
+.boxInput {
+  margin: 10px 0;
+}

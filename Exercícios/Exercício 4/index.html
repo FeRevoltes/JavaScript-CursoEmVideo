@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Exercício</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vamos Contar</h1>
+    </header>
+
+    <section>
+      <div class="boxInput">
+        <label for="numStart">Início:</label>
+        <input type="number" id="numStart" name="numStart" />
+      </div>
+      <div class="boxInput">
+        <label for="numEnd">Fim:</label>
+        <input type="number" id="numEnd" name="numEnd" />
+      </div>
+      <div class="boxInput">
+        <label for="numStep">Passo:</label>
+        <input type="number" id="numStep" name="numStep" />
+      </div>
+      <div>
+        <input type="button" value="Contar" id="botao" onclick="count()" />
+      </div>
+      <div id="result"></div>
+    </section>
+
+    <footer>&copy;CursoemVideo</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
